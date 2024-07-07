@@ -1,0 +1,408 @@
+:root {
+  --exalt-color-primary: #FC5656;
+  --exalt-color-tertiary: #272c30;
+  --exalt-color-body-background: #ffffff;
+  --exalt-color-boxed-layout-background: #dddddd;
+  --exalt-color-light-background: #F7F6F1;
+  --exalt-color-dark-background: #3c3c3c;
+  --exalt-color-main-menu: #272c30;
+  --exalt-color-text-main: #2c2b2b;
+  --exalt-color-text-light: #7D7D7D;
+  --exalt-color-text-headings: var(--exalt-color-text-main);
+  --exalt-color-link: #2c2b2b;
+  --exalt-color-link-hover: var(--exalt-color-primary);
+  --exalt-color-link-visited: #5d7ddb;
+  --exalt-color-button-background: var(--exalt-color-primary);
+  --exalt-color-button-text: #ffffff;
+  --exalt-color-button-hover-text: #ffffff;
+  --exalt-color-button-hover-background: #222222;
+  --exalt-color-button-focus-background: #111111;
+  --exalt-color-border: #E0E0E0;
+  --exalt-color-input-border: #ccc;
+  --exalt-color-text-input-focus: var(--exalt-color-text-main);
+  --exalt-color-input: var(--exalt-color-text-main);
+  --exalt-color-background-pre: #eeeeee;
+}
+  
+:root {
+  --exalt-font-family-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --exalt-font-family-headings: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --exalt-font-family-code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  --exalt-font-family-pre: "Courier 10 Pitch", courier, monospace;
+  --exalt-font-size-base: 16px;
+  --exalt-font-size-xxxs: 0.688rem;
+  --exalt-font-size-xxs: 0.75rem;
+  --exalt-font-size-xs: 0.875rem;
+  --exalt-font-size-sm: 0.938rem;
+  --exalt-font-size-md: 1.063rem;
+  --exalt-font-size-lg: 1.375rem;
+  --exalt-font-size-xl: 1.5rem;
+  --exalt-font-size-xxl: 1.625rem;
+  --exalt-font-size-xxxl: 2rem;
+  --exalt-font-size-xxxxl: 2.25rem;
+  --exalt-line-height-body: 1.5;
+  --exalt-line-height-article: 1.7;
+  --exalt-line-height-headings: 1.3;
+  --exalt-line-height-pre: 1.6;
+  --exalt-font-weight-headings: 700;
+}
+  
+:root {
+  --exalt-post-cols-gap: 40px;
+  --exalt-footer-cols-gap: 40px;
+}
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  html {
+    font-size: var(--exalt-font-size-base);
+  }
+  
+  body,
+  button,
+  input,
+  select,
+  optgroup,
+  textarea {
+    color: var(--exalt-color-text-main);
+    font-family: var(--exalt-font-family-body);
+    font-size: 1rem;
+    line-height: var(--exalt-line-height-body);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    clear: both;
+    font-family: var(--exalt-font-family-headings);
+    line-height: var(--exalt-line-height-headings);
+    font-weight: var(--exalt-font-weight-headings);
+    margin: 20px 0;
+  }
+  
+  h1 {
+    font-size: var(--exalt-font-size-xxxl);
+  }
+  
+  h2 {
+    font-size: var(--exalt-font-size-xl);
+  }
+  
+  h3 {
+    font-size: var(--exalt-font-size-lg);
+  }
+  
+  h4 {
+    font-size: var(--exalt-font-size-md);
+  }
+  
+  h5 {
+    font-size: var(--exalt-font-size-base);
+  }
+  
+  h6 {
+    font-size: var(--exalt-font-size-sm);
+  }
+    
+  p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+  }
+  
+  
+  blockquote {
+    border-left: 4px solid var(--exalt-color-primary);
+    box-shadow: inset 0 0 0 0 #ddd;
+    margin: 0;
+    padding-left: 1em;
+  }
+  
+  pre {
+    background: var(--exalt-color-background-pre);
+    font-family: var(--exalt-font-family-pre);
+    line-height: var(--exalt-line-height-pre);
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+  }
+  
+  code,
+  kbd,
+  tt,
+  var {
+    font-family: var(--exalt-font-family-code);
+  }
+  
+  abbr,
+  acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+  }
+  
+  mark,
+  ins {
+    background: #fff9c0;
+    text-decoration: none;
+  }
+  
+  big {
+    font-size: 125%;
+  }
+  
+  /* Elements
+  --------------------------------------------- */
+  body {
+    background-color: var(--exalt-color-body-background);
+  }
+  
+  hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+  }
+  
+  ul,
+  ol {
+    margin: 0 0 1.5em;
+    padding-left: 2rem;
+  }
+  
+  ul {
+    list-style: disc;
+  }
+  
+  ol {
+    list-style: decimal;
+  }
+  
+  li > ul,
+  li > ol {
+    margin-bottom: 0;
+    padding-left: 2rem;
+  }
+  
+  dt {
+    font-weight: 700;
+  }
+  
+  dd {
+    margin: 0 1.5em 1.5em;
+  }
+  
+  /* Make sure embeds and iframes fit their containers. */
+  embed,
+  iframe,
+  object {
+    max-width: 100%;
+  }
+  
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  figure {
+    margin: 0 0 1em;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 0 0 1.5em;
+    width: 100%;
+  }
+    
+  table, th, td {
+    border: 1px solid var(--exalt-color-border);
+  }
+    
+  th {
+    background: #f8f8f8;
+    padding: 8px 15px;
+    text-align: left;
+  }
+    
+  td {
+    padding: 5px 15px;
+  }
+  
+  /* Links
+  --------------------------------------------- */
+  a {
+    color: var(--exalt-color-link);
+    text-decoration: none;
+  }
+  
+  a:hover, a:focus, a:active {
+    color: var(--exalt-color-link-hover);
+  }
+  
+  a:focus {
+    outline: thin dotted;
+  }
+  
+  a:hover, a:active {
+    outline: 0;
+  }
+  
+  /* Galleries
+  --------------------------------------------- */
+  .gallery {
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-gap: 1.5em;
+  }
+  
+  .gallery-item {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .gallery-columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .gallery-columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .gallery-columns-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .gallery-columns-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .gallery-columns-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .gallery-columns-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  
+  .gallery-columns-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  
+  .gallery-caption {
+    display: block;
+  }
+
+.wp-block-group .wp-block-group__inner-container > *:last-child {
+  margin-bottom: 0;
+}
+
+.wp-block-columns .wp-block-column > *:last-child {
+  margin-bottom: 0;
+}
+
+.wp-block-archives,
+.wp-block-categories,
+.wp-block-latest-posts {
+    padding: 0;
+    list-style: none;
+}
+
+.wp-block-archives li,
+.wp-block-categories li,
+.wp-block-latest-posts li {
+    margin-bottom: 0.5em;
+}
+
+.wp-block-latest-comments {
+    padding-left: 0;
+}
+
+.wp-block-button__link {
+    border-radius: 3px;
+    background: var(--exalt-color-button-background);
+    color: var(--exalt-color-button-text);
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.8em 1em 0.8em;
+    font-size: var(--exalt-font-size-base);
+    font-weight: bold;
+}
+
+.wp-block-button__link:hover {
+    color: #ffffff;
+    background: var(--exalt-color-button-hover-background);
+}
+
+.wp-block-button__link:active, .wp-block-button__link:focus {
+    color: #ffffff;
+    background: var(--exalt-color-button-focus-background);
+}
+
+.entry-content .wp-block-button__link {
+    text-decoration: none;
+}
+
+.wp-block-search__button {
+    padding: 0.8rem 1rem;
+    border: none;
+}
+
+.wp-block-quote {
+  margin-bottom: 30px;
+}
+
+.wp-block-pullquote {
+	border-left: none;
+	border-right: none;
+  font-size: var(--exalt-font-size-xl);
+	padding: 2.5rem 0;
+	text-align: left;
+  margin-top: 40px;
+	margin-bottom:40px;
+}
+
+.wp-block-pullquote blockquote {
+	border-left: none;
+}
+
+.wp-block-pullquote blockquote p, 
+.wp-block-pullquote.is-style-solid-color blockquote p {
+	font-size: var(--exalt-font-size-xl);
+	line-height: 1.3;
+  margin-bottom: 0.5em;
+	margin-top: 0;
+  font-style: italic;
+}
+
+.wp-block-pullquote cite,
+.wp-block-pullquote .wp-block-pullquote__citation {
+	font-size: var(--exalt-font-size-sm);
+}
+
+.wp-block-pullquote cite::before,
+.wp-block-pullquote .wp-block-pullquote__citation::before {
+	content: "—";
+  margin-right: 0.25rem;
+}
+
+.wp-block-pullquote.is-style-solid-color, 
+.wp-block-pullquote.has-background, 
+.wp-block-pullquote[style*=border-style][style*=border-width] {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.wp-block-pullquote.is-style-solid-color blockquote {
+  margin-left: 0;
+  margin-right: 0;
+}
